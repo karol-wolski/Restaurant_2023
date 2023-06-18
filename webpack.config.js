@@ -21,7 +21,7 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: ['.tsx', '.ts', '.js'],
+    extensions: ['.ts', '.js'],
   },
   output: {
     filename: 'scripts.js',
@@ -36,7 +36,7 @@ module.exports = {
       filename: 'style.css',
     }),
     new CopyPlugin({
-      patterns: [{ from: 'src/img', to: 'img' }],
+      patterns: [{ from: 'src/assets/images/', to: 'img' }],
     }),
   ],
   optimization: {

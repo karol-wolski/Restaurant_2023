@@ -1,0 +1,44 @@
+.welcome-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  background: url('../assets/images/slide.jpg') rgba(0, 0, 0, 0.35);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
+.welcome-section__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 1.5rem;
+}
+
+.welcome-section__title {
+  font-size: clamp(4rem, 10vw, 9.6rem);
+  font-weight: 400;
+  text-align: center;
+  margin-top: 4rem;
+  color: var(--base);
+}
+
+.welcome-section__subtitle {
+  display: block;
+  font-size: 6.4rem;
+  font-weight: 400;
+  text-align: center;
+  color: var(--base);
+
+  &::after {
+    content: '';
+    display: block;
+    border-bottom: 1rem solid var(--base);
+    width: 100px;
+    margin: 0 auto;
+    padding-top: 3rem;
+  }
+}
