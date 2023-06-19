@@ -7,6 +7,9 @@
 :root {
   --base: #fafafa;
   --bg-dark: rgba(0, 0, 0, 0.9);
+  --bg-shading: rgba(0, 0, 0, 0.35);
+  --red: #aa2222;
+  --accent: #fdb90c;
 }
 
 html {
@@ -19,4 +22,51 @@ html {
   max-width: 100%;
   padding: 0 1.5rem;
   margin: 0 auto;
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn__text {
+  text-transform: uppercase;
+  color: var(--bg-shading);
+  padding: 0.5rem 1.5rem;
+  outline-color: var(--accent);
+  font-size: 1.8rem;
+
+  &:hover {
+    color: var(--accent);
+  }
+}
+
+.btn__text--active {
+  color: var(--accent);
+}
+
+.btn__contained {
+  font-size: 1.8rem;
+  font-weight: 500;
+  background-color: var(--accent);
+  color: var(--base);
+  padding: 1.6rem 4rem;
+  z-index: 1;
+
+  &:hover {
+    background-color: var(--red);
+  }
+}
+
+.btn__outlined {
+  font-size: 1.8rem;
+  font-weight: 700;
+  border: 2px solid var(--red);
+  padding: 1.5rem;
+  color: var(--base);
+
+  &:hover {
+    background-color: var(--red);
+  }
 }
