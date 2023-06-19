@@ -1,0 +1,37 @@
+.about-us {
+  padding: 10rem 0 5rem 0;
+}
+
+.about-us__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 10rem;
+  gap: 3rem;
+}
+
+.about-us__title {
+  font-size: 4.8rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.about-us__desc {
+  font-size: 1.6rem;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.6;
+  text-wrap: balance;
+  overflow-wrap: break-word;
+  hyphens: manual;
+  max-width: 43rem;
+}
+
+.about-us__image {
+  display: none;
+  width: 37.2rem;
+  height: 47.5rem;
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
