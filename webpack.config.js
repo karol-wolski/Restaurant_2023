@@ -18,6 +18,32 @@ module.exports = {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
+      {
+        test: /\.html$/i,
+        use: 'html-loader',
+      },
+      {
+        test: /\.(png|jpg)$/i,
+        type: 'asset/resource',
+        use: [
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              pngquant: {
+                quality: [0.9, 0.95],
+              },
+            },
+          },
+        ],
+        parser: {
+          dataUrlCondition: {
+            maxSize: 10 * 1024,
+          },
+        },
+        generator: {
+          filename: 'images/[name]-[hash][ext]',
+        },
+      },
     ],
   },
   resolve: {

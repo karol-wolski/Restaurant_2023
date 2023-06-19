@@ -16,6 +16,7 @@
   align-items: center;
   flex-direction: column;
   padding: 0 1.5rem;
+  width: 100%;
 }
 
 .welcome-section__title {
