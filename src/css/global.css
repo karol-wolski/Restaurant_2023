@@ -8,6 +8,7 @@
   --base: #fafafa;
   --bg-dark: rgba(0, 0, 0, 0.9);
   --bg-shading: rgba(0, 0, 0, 0.35);
+  --bg-shading-70: rgba(0, 0, 0, 0.7);
   --red: #aa2222;
   --accent: #fdb90c;
 }

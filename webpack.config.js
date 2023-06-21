@@ -41,7 +41,7 @@ module.exports = {
           },
         },
         generator: {
-          filename: 'images/[name]-[hash][ext]',
+          filename: 'images/[name][ext]',
         },
       },
     ],
@@ -62,7 +62,7 @@ module.exports = {
       filename: 'style.css',
     }),
     new CopyPlugin({
-      patterns: [{ from: 'src/assets/images/', to: 'img' }],
+      patterns: [{ from: 'src/assets/images/', to: 'images' }],
     }),
   ],
   optimization: {
