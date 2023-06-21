@@ -266,5 +266,76 @@
         </div>
       </section>
     </div>
+
+    <section id="contact" class="contact">
+      <h2 class="contact__title">
+        Contact
+      </h2>
+      <div class="contact__container">
+        <div class="contact__column">
+          <div class="contact__tile contact__address">
+            <div>
+              <h3>Address:</h3>
+              <address>
+                740 Park Ave <br>
+                New York, NY 10021 <br>
+                USA
+              </address>
+            </div>
+            <div>
+              <div>
+                <h3>Telephone:</h3>
+                <a href="tel:1234567890">123 - 456 - 7890</a>
+              </div>
+              <div>
+                <h3>Email:</h3>
+                <a href="mailto:contact@mail.com">contact@mail.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="contact__tile contact__tile--column contact__hours">
+            <h3 class="contact__hours-title">
+              Hours
+            </h3>
+            <div>
+              <div>
+                <h4>Monday - Saturday</h4>
+                <p>Lunch: 11AM - 1PM</p>
+                <p>Dinner: 1PM - 10PM</p>
+              </div>
+              <div>
+                <h4>Sunday</h4>
+                <p>Lunch: 11AM - 1PM</p>
+                <p>Dinner: 1PM - 8PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact__column">
+          <form id="contact-form" action="#" class="form-contact">
+            <div class="form-contact__container">
+              <div class="form-contact__group">
+                <label class="form-contact__label" for="name">Name *</label>
+                <input class="form-contact__field" id="name" name="name" type="text">
+              </div>
+              <div class="form-contact__group">
+                <label class="form-contact__label" for="telephone">Telephone *</label>
+                <input class="form-contact__field" id="telephone" name="telephone" type="tel">
+              </div>
+            </div>
+            <div class="form-contact__group">
+              <label class="form-contact__label" for="email">Email *</label>
+              <input class="form-contact__field" id="email" name="email" type="email">
+            </div>
+            <div class="form-contact__group">
+              <label class="form-contact__label" for="message">How can I help you?*</label>
+              <textarea class="form-contact__field form-contact__field--textarea" cols="60" id="message" name="message"
+                rows="40"></textarea>
+            </div>
+            <button class="btn btn__contained" id="sendForm" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

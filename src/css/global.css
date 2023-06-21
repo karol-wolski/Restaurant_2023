@@ -6,11 +6,17 @@
 
 :root {
   --base: #fafafa;
+  --base-dark: #000;
   --bg-dark: rgba(0, 0, 0, 0.9);
   --bg-shading: rgba(0, 0, 0, 0.35);
   --bg-shading-70: rgba(0, 0, 0, 0.7);
   --red: #aa2222;
+  --red-light: #ab2222;
   --accent: #fdb90c;
+  --tile: rgba(255, 255, 255, 0.95);
+  --grey: #efefef;
+  --green: #00ff40;
+  --green-dark: #15762d;
 }
 
 html {
@@ -70,4 +76,24 @@ html {
   &:hover {
     background-color: var(--red);
   }
+}
+
+.alert {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-top: 0.5rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+.alert--error {
+  border: 1px solid var(--red);
+  background-color: var(--red-light);
+  color: var(--base);
+}
+
+.alert--success {
+  border: 1px solid var(--green-dark);
+  background-color: var(--green);
+  color: var(--base-dark);
 }
