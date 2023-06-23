@@ -4,6 +4,7 @@
     "target": "ES5",
     "module": "ES2020",
     "sourceMap": true,
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true
   }
 }
