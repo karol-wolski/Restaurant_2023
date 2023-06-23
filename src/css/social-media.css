@@ -1,0 +1,11 @@
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  width: 7rem;
+}
+
+.social-media__icon {
+  height: 1.8rem;
+}
