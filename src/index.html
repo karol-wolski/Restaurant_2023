@@ -26,6 +26,7 @@
         <li class="nav__item"><a href="#menu" class="nav__link">Menu</a></li>
         <li class="nav__item"><a href="#gallery" class="nav__link">Gallery</a></li>
         <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        <li class="nav__item"><button id="book-table" class="btn btn__outlined">Book a table</button></li>
       </ul>
   </nav>
     <section id="welcome-section" class="welcome-section">
@@ -380,6 +381,51 @@
       </ul>
     </div>
   </footer>
+
+
+  <div id="book-table-modal" class="book-table">
+    <div class="book-table__wrapper">
+      <button name="close form" id="close-book-table-btn" class="close" aria-label="Close modal">
+        <span class="close__line"></span>
+        <span class="close__line"></span>
+      </button>
+      <h2 class="book-table__title">Book a table</h2>
+
+      <form id="book-table-form" action="" class="form-reservation">
+        <div class="form-reservation__group">
+          <label class="form-reservation__label" for="reservation-name">Name *</label>
+          <input class="form-reservation__field" id="reservation-name" name="name" type="text">
+        </div>
+        <div class="form-reservation__group">
+          <label class="form-reservation__label" for="reservation-email">Email</label>
+          <input class="form-reservation__field" id="reservation-email" name="email" type="email">
+        </div>
+        <div class="form-reservation__group">
+          <label class="form-reservation__label" for="reservation-phone">Phone *</label>
+          <input class="form-reservation__field" id="reservation-phone" name="phone" type="tel">
+        </div>
+        <div class="form-reservation__group">
+          <label class="form-reservation__label" for="reservation-date">Date *</label>
+          <input class="form-reservation__field" id="reservation-date" name="date" type="date">
+        </div>
+        <div class="form-reservation__group">
+          <label class="form-reservation__label" for="reservation-time">Time *</label>
+          <input class="form-reservation__field" id="reservation-time" name="time" type="time">
+        </div>
+        <div class="form-reservation__group">
+          <label class="form-reservation__label" for="reservation-seats">Seats *</label>
+          <input class="form-reservation__field" id="reservation-seats" name="seats" type="number" min="1" max="6">
+        </div>
+
+        <div class="form-reservation__group form-reservation__group--w100">
+          <label class="form-reservation__label" for="special-requests">Special requests</label>
+          <textarea class="form-reservation__field form-reservation__field--textarea" id="special-requests"
+            name="special-requests"></textarea>
+        </div>
+        <button class="btn btn__contained" id="sendForm" type="submit">Send</button>
+      </form>
+    </div>
+  </div>
 
   </body>
 </html>
