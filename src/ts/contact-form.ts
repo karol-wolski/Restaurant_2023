@@ -1,29 +1,6 @@
 import { alert } from './alert'
 import { ALERT_TYPE, MESSAGES } from './constants'
-import { isEmail, isLetters, isPhoneNo, isRequired } from './helpers'
-
-const checkField = (inputId: string, required = false, onlyLetters = false) => {
-  const input = document.getElementById(inputId)
-  const { value, type } = input as HTMLInputElement
-  const errorMsgContainer = input.nextElementSibling
-  let message = ''
-
-  if (required && isRequired(value)) message += MESSAGES.REQUIRED_ERR_MSG
-
-  if (required || value) {
-    if (onlyLetters && !isLetters(value)) message += MESSAGES.ONLY_LETTERS_ERR_MSG
-    if (type === 'tel' && !isPhoneNo(value)) message += MESSAGES.PHONE_ERR_MSG
-    if (type === 'email' && !isEmail(value)) message += MESSAGES.EMAIL_ERR_MSG
-  }
-
-  if (errorMsgContainer) errorMsgContainer.remove()
-
-  if (message) {
-    input.parentElement.append(alert(ALERT_TYPE.ERROR, message))
-    return false
-  }
-  return true
-}
+import { checkField } from './helpers'
 
 export const contactForm = () => {
   const name = document.querySelector('#name')
